@@ -5,7 +5,6 @@ class HashPathExtensionTest extends PHPUnit_Framework_TestCase
 
     public function testHashFile()
     {
-
         $hashPath = new HashPathExtension();
 
         $this->assertEquals(
@@ -23,12 +22,10 @@ class HashPathExtensionTest extends PHPUnit_Framework_TestCase
                 false
             )
         );
-
     }
 
     public function testHashPath()
     {
-
         $hashPath = new HashPathExtension();
 
         $this->assertEquals(
@@ -48,7 +45,5 @@ class HashPathExtensionTest extends PHPUnit_Framework_TestCase
                 false
             )
         );
-
     }
-
 }

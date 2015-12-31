@@ -43,7 +43,7 @@ class HashPathExtension extends Extension
 
         if (file_exists($path)) {
             $hash = md5_file($path);
-            return str_replace(array('/', '+','='), '', base64_encode(pack('H*', $hash)));
+            return str_replace(array('/', '+', '='), '', base64_encode(pack('H*', $hash)));
         }
         
         return '';
@@ -81,5 +81,4 @@ class HashPathExtension extends Extension
             $theme ? '/themes/' . Config::inst()->get('SSViewer', 'theme') . "/$path" : $path
         );
     }
-
 }
